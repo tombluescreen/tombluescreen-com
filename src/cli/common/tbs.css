@@ -7,10 +7,66 @@ Back Black-
 Front White-
 Front Black- */
 
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: lightgray;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.topnav {
+    position: sticky;
+    background-color: rgb(180, 180, 180);
+    margin: 0 0 0 0;
+    padding: 2px 2px 2px 2px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
 
 .project-tile {
-
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: min-content auto;
+    grid-template-rows: auto 1fr;
+    background-color: rgb(161, 161, 255);
+    border-radius: 20px;
+    margin: 20px 20px 20px 20px;
+    padding: 5px 5px 5px 5px;
 }
+
+.project-tile > img {
+    /* Project Image */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-width: 100px;
+    min-height: 100px;
+    aspect-ratio: 1 / 1;
+}
+
+.project-tile > span {
+    /* Project Title */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.project-tile > p {
+    /* Project Desc */
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
 
 .project-tile-title {
 
