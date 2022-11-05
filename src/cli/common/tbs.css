@@ -9,31 +9,76 @@ Front Black- */
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: lightgray;
+    background-color: rgb(230, 230, 255);
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
 
 .topnav {
     position: sticky;
-    background-color: rgb(180, 180, 180);
+    
+    /* background-color: rgb(25, 41, 255); */
+    background-image: linear-gradient(to bottom right, rgb(67, 113, 238), rgb(0, 183, 255));;
     margin: 0 0 0 0;
     padding: 2px 2px 2px 2px;
     top: 0px;
     left: 0px;
     right: 0px;
+    
 }
 
+.topnav-icon {
+    width: 80px;
+    
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: middle;
+    margin: 5px 5px 5px 5px;
+
+}
 
 .project-tile {
     display: grid;
+    box-shadow: 10px 10px grey;
     gap: 10px 10px;
     grid-template-columns: min-content auto;
     grid-template-rows: auto 1fr;
-    background-color: rgb(161, 161, 255);
+    background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));;
     border-radius: 20px;
     margin: 20px 20px 20px 20px;
-    padding: 5px 5px 5px 5px;
+    padding: 15px 15px 15px 15px;
+
+    
+    
+}
+
+
+
+.good-link:link {
+    color:inherit;
+    text-decoration: none;
+    transition: transform 0.1s;
+}
+
+.good-link:visited {
+    color:inherit;
+    text-decoration: none;
+}
+
+.good-link:hover {
+    color:inherit;
+    text-decoration: none;
+
+    transform: scale(103%);
+    
+    
+    
+}
+
+.good-link:active {
+    color:inherit;
+    text-decoration: none;
 }
 
 .project-tile > img {
@@ -68,22 +113,104 @@ body {
 }
 
 
-.project-tile-title {
-
-}
-
-.project-tile-desc {
+#links-c {
     
+    text-align: center;
+    width: 100%;
 }
 
 .social-cont {
+    display: inline-flex;
+    background-image: linear-gradient(to bottom right, rgb(255, 119, 28), rgb(230, 219, 77));;
+    border-radius: 20px;
+    margin: 10px 10px 10px 10px;
+    padding: 9px 9px 9px 9px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;   
+}
+
+
+.social-cont > img {
+    float:left;
+}
+
+
+.social-cont > span {
+    float:right;
+    vertical-align: middle;
 
 }
 
-.social-img {
-
+.t-header {
+    text-align: center;
 }
 
-.social-txt {
 
+
+section {
+    display:inline-block;
+    width:100%;
+    /* aspect-ratio:1; */
+    padding-bottom: 100px;
+    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+     --m:
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x;
+      /* conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x;  */
+    -webkit-mask: var(--m);
+            mask: var(--m);
+}
+
+.page-open {
+    display:inline-block;
+    width:100%;
+    /* aspect-ratio:1; */
+    padding-top: 50px;
+    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+     --m:
+      /* conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x; */
+      conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 100% repeat-x;  
+    -webkit-mask: var(--m);
+            mask: var(--m);
+}
+
+.page-break {
+    display:inline-block;
+    width:100%;
+    /* aspect-ratio:1; */
+    padding-bottom: 100px;
+    
+    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+     --m:
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x;
+      /* conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x;  */
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    background-color: green;
+}
+
+.page-both {
+    display:inline-block;
+    position: relative;
+    width:100%;
+    /* aspect-ratio:1; */
+    top:-50px;
+    padding-bottom: 80px;
+    padding-top: 50px;
+    margin-top: 0px;
+    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+     --m:
+      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 51% repeat-x,
+      conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x; 
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    
+}
+
+.extra-cut-pad-top {
+    padding-top: 65px;
+}
+
+.extra-cut-pad-bottom {
+    padding-bottom: 65px;
 }
