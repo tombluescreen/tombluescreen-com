@@ -18,7 +18,7 @@ body {
     position: sticky;
     
     /* background-color: rgb(25, 41, 255); */
-    background-image: linear-gradient(to bottom right, rgb(67, 113, 238), rgb(0, 183, 255));;
+    /* background-image: linear-gradient(to bottom right, rgb(67, 113, 238), rgb(0, 183, 255));; */
     margin: 0 0 0 0;
     padding: 2px 2px 2px 2px;
     top: 0px;
@@ -44,16 +44,30 @@ body {
     gap: 10px 10px;
     grid-template-columns: min-content auto;
     grid-template-rows: auto 1fr;
-    background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));;
-    border-radius: 20px;
-    margin: 20px 20px 20px 20px;
-    padding: 15px 15px 15px 15px;
+    background-image: linear-gradient(to bottom right, rgb(255, 119, 28), rgb(230, 219, 77));;
 
+    /* background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));; */
+    border-radius: 20px;
+    margin: auto;
+    padding: 15px 15px 15px 15px;
+    min-width: fit-content;
+    max-width: 40%;
     
     
 }
 
+.common-background {
+    /* background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%); */
+    background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(6,65,90,1) 25%, rgba(8,8,110,1) 33%, rgba(9,118,121,1) 39%, rgba(8,147,137,1) 46%, rgba(7,62,156,1) 55%, rgba(6,145,169,1) 61%, rgba(4,122,195,1) 73%, rgba(0,212,255,1) 100%);
+}
 
+#projects-c {
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    /* background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%); */
+    /* background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b); */
+}
 
 .good-link:link {
     color:inherit;
@@ -110,6 +124,7 @@ body {
     grid-row-end: 3;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    color: rgba(0, 0, 0, 0.664);
 }
 
 
@@ -121,7 +136,10 @@ body {
 
 .social-cont {
     display: inline-flex;
-    background-image: linear-gradient(to bottom right, rgb(255, 119, 28), rgb(230, 219, 77));;
+    /* background-image: linear-gradient(to bottom right, rgb(255, 119, 28), rgb(230, 219, 77));; */
+        /* background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));; */
+    background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));;
+
     border-radius: 20px;
     margin: 10px 10px 10px 10px;
     padding: 9px 9px 9px 9px;
@@ -148,25 +166,12 @@ body {
 
 
 
-section {
-    display:inline-block;
-    width:100%;
-    /* aspect-ratio:1; */
-    padding-bottom: 100px;
-    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-     --m:
-      conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x;
-      /* conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x;  */
-    -webkit-mask: var(--m);
-            mask: var(--m);
-}
-
 .page-open {
     display:inline-block;
     width:100%;
     /* aspect-ratio:1; */
     padding-top: 50px;
-    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
+    
      --m:
       /* conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x; */
       conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 100% repeat-x;  
@@ -180,8 +185,8 @@ section {
     /* aspect-ratio:1; */
     padding-bottom: 100px;
     
-    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-     --m:
+    
+    --m:
       conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 100% repeat-x;
       /* conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x;  */
     -webkit-mask: var(--m);
@@ -198,8 +203,8 @@ section {
     padding-bottom: 80px;
     padding-top: 50px;
     margin-top: 0px;
-    background:linear-gradient(135deg,#1f005c, #5b0060, #870160, #ac255e, #ca485c, #e16b5c, #f39060, #ffb56b);
-     --m:
+    
+    --m:
       conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) bottom/80px 51% repeat-x,
       conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x; 
     -webkit-mask: var(--m);
