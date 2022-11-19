@@ -16,6 +16,7 @@ body {
 
 .topnav {
     position: sticky;
+    z-index:10;
     
     /* background-color: rgb(25, 41, 255); */
     /* background-image: linear-gradient(to bottom right, rgb(67, 113, 238), rgb(0, 183, 255));; */
@@ -28,18 +29,44 @@ body {
 }
 
 .topnav-icon {
-    width: 80px;
+    height: 40px;
     
-    position: relative;
+    position:relative;
+    
     left: 50%;
     transform: translateX(-50%);
     vertical-align: middle;
     margin: 5px 5px 5px 5px;
+    
 
 }
 
+
+
 .t-header {
 
+}
+
+
+#valorant-icon-cont {
+    position: absolute;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+    left: 25%;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    transform: translateX(-50%);
+    background-image: url('../res/valorant-svg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#valorant-icon {
+    display: block;
+    height: 100%;
+    /* margin: 5px 5px 5px 5px; */
+    vertical-align: middle;
 }
 
 .project-tile {
@@ -52,8 +79,8 @@ body {
 
     /* background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));; */
     border-radius: 20px;
-    margin: auto;
-    padding: 15px 15px 15px 15px;
+    margin: 10px auto 10px auto;;
+    padding: 5px 15px 15px 15px;
     min-width: 700px;
     width: 50%;
     
@@ -84,7 +111,7 @@ body {
 .good-link:link {
     color:inherit;
     text-decoration: none;
-    transition: transform 0.1s;
+    /* transition: transform 0.1s; */
 }
 
 .good-link:visited {
@@ -96,7 +123,7 @@ body {
     color:inherit;
     text-decoration: none;
 
-    transform: scale(101%);
+    /* transform: scale(101%); /* Causing a wierd firefox bug where the hover would toggle on and off*/
     
     
     
@@ -210,6 +237,7 @@ body {
 .page-both {
     display:inline-block;
     position: relative;
+    /* z-index:0; */
     width:100%;
     /* aspect-ratio:1; */
     top:-50px;
@@ -231,4 +259,9 @@ body {
 
 .extra-cut-pad-bottom {
     padding-bottom: 65px;
+}
+
+.in-development {
+    color: rgb(255, 196, 0);
+    font-style: italic;
 }
