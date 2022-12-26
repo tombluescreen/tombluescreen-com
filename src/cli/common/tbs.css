@@ -75,7 +75,7 @@ body {
     gap: 10px 10px;
     grid-template-columns: min-content auto;
     grid-template-rows: auto 1fr;
-    background-image: linear-gradient(to bottom right, rgb(0, 173, 185), rgb(0, 66, 121));;
+    background-image: linear-gradient(to bottom right, rgb(0, 110, 255), rgb(0, 66, 121));;
 
     /* background-image: linear-gradient(to bottom right, rgb(52, 157, 255), rgb(24, 113, 155));; */
     border-radius: 20px;
@@ -97,6 +97,10 @@ body {
 .common-background {
     background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 39%, rgba(0,212,255,1) 100%);
     color: #f9f9f9ff;
+    animation: example 60s ease infinite alternate;
+    background-size: 400% 400%;
+    
+    animation-fill-mode: forwards;
     /* background: linear-gradient(144deg, rgba(2,0,36,1) 0%, rgba(6,65,90,1) 25%, rgba(8,8,110,1) 33%, rgba(9,118,121,1) 39%, rgba(8,147,137,1) 46%, rgba(7,62,156,1) 55%, rgba(6,145,169,1) 61%, rgba(4,122,195,1) 73%, rgba(0,212,255,1) 100%); */
 }
 
@@ -250,7 +254,21 @@ body {
       conic-gradient(from 135deg at top   ,#0000,#000 1deg 89deg,#0000 90deg) top   /80px 51% repeat-x; 
     -webkit-mask: var(--m);
             mask: var(--m);
+           
+    /* background-image: url('../res/share-icon.png'); */
     
+    
+}
+
+@keyframes example {
+    0% {
+        background-position: 0% 0%;
+    }
+    
+    100% {
+        background-position: 100% 100%;
+        
+    }
 }
 
 .extra-cut-pad-top {
